@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        style="@style/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/linear_layout3"
+                style="@style/linear_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/good_morning_text_View"
+                    style="@style/good_morning_text_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/good_morning" />
+
+                <ImageView
+                    android:id="@+id/hearts_image_view"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hearts_image" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/menu_image_view"
+                style="@style/menu_image_view"
+                android:src="@drawable/menu_image"
+                app:tint="?attr/text_color" />
+
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/search_view"
+            style="@style/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryBackground="@android:color/transparent"
+            android:theme="@style/SearchViewTheme" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/switch_mode" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linear_layout4"
+                style="@style/linear_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ellipse_image_view"
+                    style="@style/ellipse_image_view"
+                    android:src="@drawable/ellipse_image" />
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    style="@style/nameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ruth_unoka" />
+
+                <TextView
+                    android:id="@+id/location_text_view"
+                    style="@style/locationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sangotedo_lagos" />
+
+
+                <Button
+                    android:id="@+id/follow_ruth_button"
+                    style="@style/follow_ruth_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="@string/follow_ruth" />
+
+
+                <Button
+                    android:id="@+id/message_button"
+                    style="@style/message_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="@string/message" />
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/grid_image1"
+                            style="@style/grid_imageStyle1"
+                            android:src="@drawable/grid_image1" />
+
+                        <ImageView
+                            android:id="@+id/grid_image2"
+                            style="@style/grid_imageStyle1"
+                            android:src="@drawable/grid_image2" />
+
+                        <ImageView
+                            android:id="@+id/grid_image3"
+                            style="@style/grid_imageStyle2"
+                            android:src="@drawable/grid_image3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/grid_image4"
+                            style="@style/grid_imageStyle1"
+                            android:src="@drawable/grid_image4" />
+
+                        <ImageView
+                            android:id="@+id/grid_image5"
+                            style="@style/grid_imageStyle1"
+                            android:src="@drawable/grid_image5" />
+
+                        <ImageView
+                            android:id="@+id/grid_image6"
+                            style="@style/grid_imageStyle2"
+                            android:src="@drawable/grid_image6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/grid_image7"
+                            style="@style/grid_imageStyle1"
+                            android:src="@drawable/grid_image7" />
+
+                        <ImageView
+                            android:id="@+id/grid_image8"
+                            style="@style/grid_imageStyle1"
+                            android:src="@drawable/grid_image8" />
+
+                        <ImageView
+                            android:id="@+id/grid_image9"
+                            style="@style/grid_imageStyle2"
+                            android:src="@drawable/grid_image9" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/see_more_button"
+                    style="@style/see_more_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="@string/see_more" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
